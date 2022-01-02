@@ -1,0 +1,23 @@
+{% set ctaPrefix = cta %}
+
+{% if ctaContent %} 
+  {% set ctaPrefix = ctaContent %}
+{% endif %}
+
+<article class="box border">
+  <div class="wrapper">
+    <div class=" [ stack ]">
+      <h2 class="" data-highlight="quaternary">{{ ctaPrefix.title }}</h2>
+      <p class="">{{ ctaPrefix.summary }}</p>
+      <div class="cluster ">
+        <div class="box">
+          <a class="button box" data-variant="ghost" href="{{ ctaPrefix.yesButtonUrl }}">{{ ctaPrefix.yesButtonText }}</a>
+        </div>
+        <div class="box">
+          <a class="button invert box" data-variant="ghost" href="{{ ctaPrefix.yesButtonUrl }}">{{ ctaPrefix.noButtonText }}</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</article>

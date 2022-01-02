@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/post.html",
+  "permalink": "https://localhost:8080/{{ title | slug }}/index.html"
+}
