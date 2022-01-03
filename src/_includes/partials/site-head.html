@@ -5,8 +5,8 @@
       <a href="/" aria-label="{{ site.name }} - home" class="site-head__brand">
         {% include "partials/svg/logo.svg" %}
       </a>
-      <nav class="cluster" aria-label="Primary">
-        <ul class="cluster" >
+      <nav class="" aria-label="Primary" style="padding:0;">
+        <ul class="cluster" style="justify-content:flex-start; padding:0;">
           {% for item in navigation.items %}
           <li>
             <a href="{{ item.url }}" class="links" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
